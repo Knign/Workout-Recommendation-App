@@ -1,3 +1,12 @@
+.navbar {
+    z-index: 20;
+    overflow: hidden;
+    background-color: #000;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 120%; /* Full width */
+}
+
 .imageLogo {
     width: 48px;
     height: 48px;
@@ -5,12 +14,14 @@
 }
 
 .link2 {
+    font-family: 'Open Sans';
     text-decoration: none;
     color: #fff;
-    border-bottom: 3px solid #FF2625;
+    border-bottom: 3px solid #dc143c;
 }
 
 .anchorExercises {
+    font-family: 'Open Sans';
     text-decoration: none;
     color: #fff;
 }

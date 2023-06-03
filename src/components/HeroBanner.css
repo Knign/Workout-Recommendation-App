@@ -1,9 +1,10 @@
 .anchorExplore {
+    font-family: 'Open Sans';
     margin-top: 45px;
     text-decoration: none;
     width: 200px;
     text-align: center;
-    background: #FF2625;
+    background: #dc143c;
     padding: 14px;
     font-size: 22px;
     text-transform: none;

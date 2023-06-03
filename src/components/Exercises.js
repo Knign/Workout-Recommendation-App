@@ -40,8 +40,11 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
   if (!currentExercises.length) return <Loader />;
 
   return (
-    <Box id="exercises" sx={{ mt: { lg: '109px' } }} mt="50px" p="20px">
-      <Typography variant="h4" color="#fff" fontWeight="bold" sx={{ fontSize: { lg: '44px', xs: '30px' } }} mb="46px">Showing Results</Typography>
+    <Box id="exercises" width={'100%'} sx={{ mt: { lg: '109px' } }} mt="50px" p="20px">
+      <Typography zIndex={-10} marginTop={-20} fontWeight={600} position={'absolute'} color="#FF2625" sx={{ opacity: '0.15', display: { lg: 'block', xs: 'none' }, fontSize: '200px' }}>
+        Exercises
+      </Typography>
+      <Typography variant="h4" color="#fff" fontWeight="bold" sx={{ fontSize: { lg: '44px', xs: '30px' } }} mb="46px">Search Results</Typography>
       <Stack direction="row" sx={{ gap: { lg: '107px', xs: '50px' } }} flexWrap="wrap" justifyContent="center">
         {currentExercises.map((exercise, idx) => (
           <ExerciseCard key={idx} exercise={exercise} />

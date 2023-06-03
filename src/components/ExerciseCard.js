@@ -7,14 +7,14 @@ const ExerciseCard = ({ exercise }) => (
   <Link className="exercise-card" to={`/exercise/${exercise.id}`}>
     <img src={exercise.gifUrl} alt={exercise.name} loading="lazy." />
     <Stack direction="row">
-      <Button sx={{ ml: '21px', color: '#fff', background: '#fd7e7e', fontSize: '14px', borderRadius: '20px', textTransform: 'capitalize' }}>
+      <Button sx={{ ml: '20px', color: '#fff', background: '#dc143c', fontSize: '14px', borderRadius: '2.5px', textTransform: 'capitalize' }}>
         {exercise.bodyPart}
       </Button>
-      <Button sx={{ ml: '21px', color: '#fff', background: '#fd7e7e ', fontSize: '14px', borderRadius: '20px', textTransform: 'capitalize' }}>
+      <Button sx={{ ml: '20px', color: '#fff', background: '#dc143c ', fontSize: '14px', borderRadius: '2.5px', textTransform: 'capitalize' }}>
         {exercise.target}
       </Button>
     </Stack>
-    <Typography className='ExerciseCardTypo' sx={{ fontSize: { lg: '24px', xs: '20px' } }}>
+    <Typography ml="20px" mr="20px" color="#000" fontWeight="bold" sx={{ fontSize: { lg: '24px', xs: '20px' } }} mt="10px" textTransform="capitalize">
       {exercise.name}
     </Typography>
   </Link>
